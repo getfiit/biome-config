@@ -29,22 +29,37 @@
     "rules": {
       "recommended": true,
       "complexity": {
-        "noUselessThisAlias": "error",
-        "noUselessTypeConstraint": "error"
+				"noUselessCatch": "off",
+				"noUselessStringConcat": "error",
+				"noUselessUndefinedInitialization": "error",
+				"noVoid": "error"
       },
       "correctness": {
         "noUnusedVariables": "error",
-        "useArrayLiterals": "off"
+				"noNewSymbol": "error",
+				"noUndeclaredVariables": "error",
+				"useJsxKeyInIterable": "off"
       },
       "style": {
         "noNamespace": "error",
-        "useAsConstAssertion": "error"
+				"noImplicitBoolean": "error",
+				"noYodaExpression": "error",
+				"useBlockStatements": "error",
+				"useCollapsedElseIf": "error",
+				"useConsistentBuiltinInstantiation": "error",
+				"useDefaultSwitchClause": "error",
+				"useShorthandAssign": "error",
+				"useThrowOnlyError": "error"
       },
+      "security": {
+				"noDangerouslySetInnerHtml": "warn"
+			},
       "suspicious": {
-        "noExtraNonNullAssertion": "error",
-        "noMisleadingInstantiator": "error",
-        "noUnsafeDeclarationMerging": "error",
-        "useNamespaceKeyword": "error"
+				"noAsyncPromiseExecutor": "off",
+				"noConsole": "error",
+				"noEmptyBlockStatements": "error",
+				"noMisleadingCharacterClass": "off",
+				"noSkippedTests": "warn"
       }
     }
   },
@@ -92,59 +107,7 @@
       "linter": {
         "rules": {
           "complexity": {
-            "noExtraBooleanCast": "error",
-            "noMultipleSpacesInRegularExpressionLiterals": "error",
-            "noUselessCatch": "error",
             "noWith": "error"
-          },
-          "correctness": {
-            "noConstAssign": "error",
-            "noConstantCondition": "error",
-            "noEmptyCharacterClassInRegex": "error",
-            "noEmptyPattern": "error",
-            "noGlobalObjectCalls": "error",
-            "noInvalidBuiltinInstantiation": "error",
-            "noInvalidConstructorSuper": "error",
-            "noNonoctalDecimalEscape": "error",
-            "noPrecisionLoss": "error",
-            "noSelfAssign": "error",
-            "noSetterReturn": "error",
-            "noSwitchDeclarations": "error",
-            "noUndeclaredVariables": "error",
-            "noUnreachable": "error",
-            "noUnreachableSuper": "error",
-            "noUnsafeFinally": "error",
-            "noUnsafeOptionalChaining": "error",
-            "noUnusedLabels": "error",
-            "noUnusedPrivateClassMembers": "error",
-            "useIsNan": "error",
-            "useValidForDirection": "error",
-            "useYield": "error"
-          },
-          "suspicious": {
-            "noAsyncPromiseExecutor": "error",
-            "noCatchAssign": "error",
-            "noClassAssign": "error",
-            "noCompareNegZero": "error",
-            "noControlCharactersInRegex": "error",
-            "noDebugger": "error",
-            "noDuplicateCase": "error",
-            "noDuplicateClassMembers": "error",
-            "noDuplicateObjectKeys": "error",
-            "noDuplicateParameters": "error",
-            "noEmptyBlockStatements": "error",
-            "noFallthroughSwitchClause": "error",
-            "noFunctionAssign": "error",
-            "noGlobalAssign": "error",
-            "noImportAssign": "error",
-            "noMisleadingCharacterClass": "error",
-            "noPrototypeBuiltins": "error",
-            "noRedeclare": "error",
-            "noShadowRestrictedNames": "error",
-            "noSparseArray": "error",
-            "noUnsafeNegation": "error",
-            "useGetterReturn": "error",
-            "useValidTypeof": "error"
           }
         }
       }
@@ -166,11 +129,6 @@
             "noUndeclaredVariables": "off",
             "noUnreachable": "off",
             "noUnreachableSuper": "off"
-          },
-          "style": {
-            "noArguments": "error",
-            "noVar": "error",
-            "useConst": "error"
           },
           "suspicious": {
             "noClassAssign": "off",
