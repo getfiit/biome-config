@@ -32,7 +32,8 @@
 				"noUselessCatch": "off",
 				"noUselessStringConcat": "error",
 				"noUselessUndefinedInitialization": "error",
-				"noVoid": "error"
+				"noVoid": "error",
+        "noForEach":"off"
       },
       "correctness": {
         "noUnusedVariables": "error",
