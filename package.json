@@ -1,0 +1,29 @@
+{
+  "name": "@fiit/biome-config",
+  "version": "1.0.0",
+  "description": "Biome config for Fiit projects",
+  "main": "biome.json",
+  "files": [
+    "biome.json"
+  ],
+  "exports": {
+    ".": "./biome.json"
+  },
+  "type": "module",
+  "keywords": [
+    "biome",
+    "config",
+    "fiit",
+    "boilerplate"
+  ],
+  "author": "cuxs/getfiit",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:getfiit/biome-config.git"
+  },
+  "homepage": "https://github.com/getfiit/biome-config#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
