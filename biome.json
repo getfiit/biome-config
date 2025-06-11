@@ -121,6 +121,10 @@
             "noWith": "off"
           },
           "correctness": {
+            "noUnusedImports":{
+              "fix":"safe",
+              "level":"error"
+            },
             "noConstAssign": "off",
             "noGlobalObjectCalls": "off",
             "noInvalidBuiltinInstantiation": "off",
